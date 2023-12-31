@@ -67,6 +67,8 @@ metadata: # kpt-merge: /openshift-ingress
   name: openshift-ingress
   annotations:
     internal.kpt.dev/upstream-identifier: '|Namespace|default|openshift-ingress'
+  labels:
+    pod-security.kubernetes.io/enforce: privileged
 ---
 apiVersion: v1
 kind: ServiceAccount
